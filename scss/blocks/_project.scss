@@ -1,0 +1,87 @@
+.project {
+    margin: 150px 0;
+
+    &__title {
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -1.65px;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__item-img {
+        height: 550px;
+        object-fit: cover;
+        border-radius: 35px;
+    }
+
+    &__item-fix {
+        position: absolute;
+        width: 100px;
+        top: 20px;
+        right: 10px;
+    }
+
+    &__item-name {
+        position: absolute;
+        top: 60px;
+        left: 65px;
+        color: #000;
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.6px;
+        max-width: 300px;
+        padding: 10px 20px;
+        border-radius: 100px;
+        background-color: #1BFF07;
+    }
+
+    &__item-title {
+        position: absolute;
+        bottom: 94px;
+        left: 50px;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -1.05px;
+    }
+
+    &__item-subtitle {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.9px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 582px;
+        height: 153px;
+        text-decoration: none;
+        color: #000;
+        font-family: "IBM Plex Mono";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.9px;
+        border-radius: 10px;
+        background-color: #1BFF07;
+        margin-top: 80px;
+    }
+}

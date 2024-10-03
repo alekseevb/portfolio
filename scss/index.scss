@@ -1,0 +1,18 @@
+@import './blocks/header';
+@import './blocks/project';
+@import './blocks/skills';
+
+body {
+    font-family: "IBM Plex Mono", "Manrope", sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}

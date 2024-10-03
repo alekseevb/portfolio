@@ -1,0 +1,96 @@
+.header {
+
+    padding-top: 33px;
+    background-image: url(../../img/header-background.JPG);
+    height: 765px;
+    background-size: cover;
+    background-position: 60% 60%;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+    }
+
+    &__logo {
+        color: #1BFF07;
+        font-size: 42.414px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -4.666px;
+        text-transform: uppercase;
+        background-color: black;
+
+        padding: 9px 12px;
+        border-radius: 100px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    &__navigation-items {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__navigation-item {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.54px;
+
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px 20px;
+        border-radius: 100px;
+        transition: background-color 0.3s;
+
+    }
+
+    &__navigation-item:hover {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    &__navigation-link {
+        color: white;
+        text-decoration: none;
+
+    }
+
+    &__about-wrapper {
+        position: absolute;
+        top: 320px;
+
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 33px 50px;
+        border-radius: 100px;
+    }
+
+    &__about-title {
+        max-width: 430px;
+        height: 103px;
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.6px;
+
+        margin-bottom: 30px;
+    }
+
+    &__about-me {
+        max-width: 919px;
+        height: 205px;
+
+        color: #1BFF07;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 70px;
+        letter-spacing: -2.4px;
+    }
+
+}

@@ -1,0 +1,212 @@
+.header {
+  padding-top: 33px;
+  background-image: url(../../img/header-background.JPG);
+  height: 765px;
+  background-size: cover;
+  background-position: 60% 60%;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.header__logo {
+  color: #1BFF07;
+  font-size: 42.414px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -4.666px;
+  text-transform: uppercase;
+  background-color: black;
+  padding: 9px 12px;
+  border-radius: 100px;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+.header__navigation-items {
+  display: flex;
+  gap: 50px;
+}
+.header__navigation-item {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.54px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+}
+.header__navigation-item:hover {
+  background-color: rgb(0, 0, 0);
+}
+.header__navigation-link {
+  color: white;
+  text-decoration: none;
+}
+.header__about-wrapper {
+  position: absolute;
+  top: 320px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 33px 50px;
+  border-radius: 100px;
+}
+.header__about-title {
+  max-width: 430px;
+  height: 103px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  margin-bottom: 30px;
+}
+.header__about-me {
+  max-width: 919px;
+  height: 205px;
+  color: #1BFF07;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+  letter-spacing: -2.4px;
+}
+
+.project {
+  margin: 150px 0;
+}
+.project__title {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.65px;
+  margin-bottom: 40px;
+}
+.project__item {
+  position: relative;
+}
+.project__item-img {
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 35px;
+}
+.project__item-fix {
+  position: absolute;
+  width: 100px;
+  top: 20px;
+  right: 10px;
+}
+.project__item-name {
+  position: absolute;
+  top: 60px;
+  left: 65px;
+  color: #000;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  max-width: 300px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: #1BFF07;
+}
+.project__item-title {
+  position: absolute;
+  bottom: 94px;
+  left: 50px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.05px;
+}
+.project__item-subtitle {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+.project__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 582px;
+  height: 153px;
+  text-decoration: none;
+  color: #000;
+  font-family: "IBM Plex Mono";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  border-radius: 10px;
+  background-color: #1BFF07;
+  margin-top: 80px;
+}
+
+.skills {
+  margin-bottom: 150px;
+}
+.skills__title {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.65px;
+  margin-bottom: 80px;
+}
+.skills__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+}
+.skills__item {
+  width: calc(50% - 25px);
+}
+.skills__item-title {
+  color: #1BFF07;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.05px;
+  margin: 15px 0;
+}
+.skills__item-subtitle {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.66px;
+}
+
+.title {
+  margin-bottom: 60px;
+}
+
+body {
+  font-family: "IBM Plex Mono", "Manrope", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */
