@@ -43,3 +43,78 @@
 .title {
     margin-bottom: 60px;
 }
+
+@media (max-width:960px) {
+    .skills {
+        &__title {
+            font-size: 45px;
+            letter-spacing: -1.35px;
+        }
+
+        &__items {
+            row-gap: 65px;
+        }
+
+        &__item {
+            width: calc(50% - 30px);
+        }
+
+        &__item-title {
+            font-size: 28px;
+            letter-spacing: -0.84px;
+            margin: 10px 0 13px 0;
+        }
+
+        &__item-subtitle {
+            font-size: 18px;
+            letter-spacing: -0.54px;
+        }
+
+        &__item-img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    .title {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:600px) {
+    .skills {
+        margin-bottom: 100px;
+
+        &__title {
+            margin-bottom: 60px;
+            font-size: 43px;
+            letter-spacing: -3.35px;
+        }
+
+        &__items {
+            flex-direction: column;
+            row-gap: 65px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__item-title {
+            font-size: 28px;
+            letter-spacing: -0.84px;
+            margin: 10px 0 13px 0;
+        }
+
+        &__item-subtitle {
+            font-size: 18px;
+            letter-spacing: -0.54px;
+        }
+
+        &__item-img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+}

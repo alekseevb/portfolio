@@ -4,7 +4,7 @@
     background-image: url(../img/header-background.JPG);
     height: 765px;
     background-size: cover;
-    background-position: 60% 60%;
+    background-position: 80% 68%;
 
     &__inner {
         display: flex;
@@ -37,6 +37,7 @@
     }
 
     &__navigation-item {
+
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -63,8 +64,6 @@
         position: absolute;
         top: 320px;
 
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 33px 50px;
         border-radius: 100px;
     }
 
@@ -90,7 +89,79 @@
         font-style: normal;
         font-weight: 400;
         line-height: 70px;
-        letter-spacing: -2.4px;
+        letter-spacing: -4.4px;
+    }
+
+}
+
+
+
+@media (max-width: 960px) {
+    .header {
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+
+            position: relative;
+        }
+
+        &__navigation {
+            display: none;
+        }
+
+        .burger-btn {
+            display: block;
+        }
+
+        &__about-me {
+            color: #1BFF07;
+            font-family: "IBM Plex Mono";
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 70px;
+            letter-spacing: -1.8px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: 716px;
+        background-position: bottom;
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+
+            position: relative;
+        }
+
+        &__navigation {
+            display: none;
+        }
+
+        .burger-btn {
+            display: block;
+        }
+
+        &__about-wrapper {
+            top: 338px;
+        }
+
+        &__about-title {
+            font-size: 15px;
+            letter-spacing: -0.45px;
+            height: 60px;
+        }
+
+        &__about-me {
+            font-size: 40px;
+            line-height: 47px;
+            letter-spacing: -1.2px;
+            height: 95px;
+        }
     }
 
 }

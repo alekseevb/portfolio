@@ -1,0 +1,163 @@
+.footer {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #FFF;
+    height: 273px;
+
+    margin-top: 10px;
+    padding-top: 76px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 66px;
+        padding: 0 40px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__top-title {
+        color: #000;
+        font-family: Manrope;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.66px;
+        max-width: 300px;
+    }
+
+    &__top-nav {}
+
+    &__top-item {
+        display: flex;
+        gap: 24px;
+
+
+    }
+
+    &__item-link {
+        color: #000;
+        font-family: Manrope;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.66px;
+        text-decoration: none;
+    }
+
+    &__down {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__down-protection {
+        color: #000;
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.6px;
+
+        opacity: 0.5;
+    }
+
+    &__down-politic {
+        color: #000;
+        text-align: right;
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.6px;
+
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 960px) {
+    .footer {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: #FFF;
+        height: 184px;
+
+        margin-top: 10px;
+        padding-top: 51px;
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            row-gap: 43px;
+            padding: 0 40px;
+        }
+
+        &__top-title {
+            font-size: 16px;
+            letter-spacing: -0.48px;
+        }
+
+        &__item-link {
+            font-size: 16px;
+            letter-spacing: -0.48px;
+        }
+
+        &__down-protection {
+            font-size: 14px;
+            letter-spacing: -0.42px;
+
+            opacity: 0.5;
+        }
+
+        &__down-politic {
+            font-size: 14px;
+            letter-spacing: -0.42px;
+
+            opacity: 0.5;
+        }
+
+    }
+
+}
+
+@media (max-width: 600px) {
+    .footer {
+        height: 100%;
+        margin-top: 0;
+        border-radius: 0;
+        padding: 47px 0 34px 0;
+
+        &__inner {
+            row-gap: 40px;
+            padding: 0;
+        }
+
+        &__top,
+        &__down {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__down {
+            gap: 12px;
+        }
+
+
+        &__top-title {
+            margin-bottom: 20px;
+        }
+
+        &__down-politic {
+            color: #000;
+            text-align: start;
+
+        }
+    }
+
+}

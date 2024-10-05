@@ -1,0 +1,135 @@
+.burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: end;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+
+
+    &__content {
+        width: 362px;
+        height: 100%;
+        background-color: #000;
+    }
+
+    &_open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        margin-left: 37px;
+        margin-top: 64px;
+    }
+
+    &__logo {
+        max-width: 200px;
+        color: #1BFF07;
+        font-size: 42.414px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -4.666px;
+        text-transform: uppercase;
+        background-color: black;
+
+        padding: 9px 12px;
+        border-radius: 100px;
+        border: 2px solid #1BFF07;
+    }
+
+    &__navigation {}
+
+    &__navigation-items {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+
+        margin-top: 37px;
+    }
+
+    &__navigation-item {}
+
+    &__navigation-link {
+        color: #FFF;
+        font-family: "IBM Plex Mono";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.75px;
+        text-transform: uppercase;
+
+        text-decoration: none;
+    }
+
+    &__contact {
+        color: #FFF;
+        font-family: "IBM Plex Mono";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.48px;
+        opacity: 0.5;
+        margin-top: 90px;
+    }
+
+    &__botton-nav {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    &__botton-item {}
+
+    &__item-link {
+        color: #FFF;
+        font-family: "IBM Plex Mono";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+
+        text-decoration: none;
+    }
+
+
+}
+
+.burger-btn {
+    position: absolute;
+    right: 5px;
+    z-index: 11;
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+
+    width: 63px;
+    height: 63px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    background-image: url(../img/burger.svg);
+
+    &_open {
+        background-image: url(../img/btn-close.svg);
+        width: 34px;
+        height: 34px;
+        background-size: cover;
+    }
+}

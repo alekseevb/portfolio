@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alekseev</title>
+    <link type="Image/x-icon" href="favicon.png" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,32 +16,73 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body class="">
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">Alekseev</div>
                 <nav class="header__navigation">
                     <ul class="header__navigation-items">
-                        <li class="header__navigation-item"><a class="header__navigation-link" href="#">портфолио</a>
+                        <li class="header__navigation-item"><a class="header__navigation-link"
+                                href="#project">портфолио</a>
                         </li>
-                        <li class="header__navigation-item"><a class="header__navigation-link" href="#">компетенции</a>
+                        <li class="header__navigation-item"><a class="header__navigation-link"
+                                href="#skills">компетенции</a>
                         </li>
-                        <li class="header__navigation-item"><a class="header__navigation-link" href="#">услуги</a></li>
-                        <li class="header__navigation-item"><a class="header__navigation-link" href="#">контакты</a>
+                        <li class="header__navigation-item"><a class="header__navigation-link"
+                                href="#services">услуги</a></li>
+                        <li class="header__navigation-item"><a class="header__navigation-link"
+                                href="#contact">контакты</a>
                         </li>
                     </ul>
                 </nav>
+                <button class="js-burger-btn burger-btn"></button>
 
                 <div class="header__about-wrapper">
                     <p class="header__about-title">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
                         повышают престиж
-                        компании и позволяют выделиться на фоне конкурентов</p>
-                    <p class="header__about-me">Привет, я Алексей — фронтенд разработчик и дизайнер сайтов</p>
+                        компании и позволяют выделиться на фоне конкурентов
+                    </p>
+                    <p class="header__about-me">Привет, я Алексей — фронтенд разработчик</p>
                 </div>
             </div>
         </div>
+
     </header>
+
+    <div class="js-burger burger">
+        <div class=" burger__content">
+            <div class="burger__inner">
+                <div class="burger__logo">Alekseev</div>
+                <nav class=" burger__navigation">
+                    <ul class="burger__navigation-items">
+                        <li class="burger__navigation-item"><a class="burger__navigation-link"
+                                href="#project">портфолио</a>
+                        </li>
+                        <li class="burger__navigation-item"><a class="burger__navigation-link"
+                                href="#skills">компетенции</a>
+                        </li>
+                        <li class="burger__navigation-item"><a class="burger__navigation-link"
+                                href="#services">услуги</a></li>
+                        <li class="burger__navigation-item"><a class="burger__navigation-link"
+                                href="#contact">контакты</a>
+                        </li>
+                    </ul>
+                    <p class="burger__contact">для связи</p>
+                    <ul class="js-burger__content burger__bottom-nav">
+
+                        <li class="burger__botton-item"><a class="burger__item-link" target="_blank"
+                                href="mailto:a.l.e.xseev@bk.ru">mail</a>
+                        </li>
+                        <li class="burger__botton-item"><a class="burger__item-link"
+                                href="http://t.me/a_lexseev">telegram</a></li>
+                        <li class="burger__botton-item"><a class="burger__item-link"
+                                href="http://vk.com/a_lexseev">VK</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section id="project" class="project">
@@ -75,19 +117,22 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <div class="container">
                 <h3 class="skills__title">Мои компетенции</h3>
                 <ul class="skills__items">
                     <li class="skills__item">
-                        <img src="img/html.svg" alt="html">
+                        <picture>
+                            <source media="(max-width: 550px)" srcset="img/services-mobile-1.jpg" sizes="">
+                            <img class="skills__item-img" src="img/html.svg" alt="html">
+                        </picture>
                         <p class="skills__item-title">HTML и CSS</p>
                         <p class="skills__item-subtitle">это основа фронтенд разработки. Умение создавать и правильно
                             структурировать HTML-документы, а также применять стили к этим документам на CSS, является
                             обязательным навыком для каждого фронтенд разработчика.</p>
                     </li>
                     <li class="skills__item">
-                        <img src="img/js.svg" alt="html">
+                        <img class="skills__item-img" src="img/js.svg" alt="html">
                         <p class="skills__item-title">JavaScript</p>
                         <p class="skills__item-subtitle">это язык программирования, который используется для создания
                             динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик
@@ -95,7 +140,7 @@
                             запросами и манипуляцией данными на стороне клиента.</p>
                     </li>
                     <li class="skills__item ">
-                        <img src="img/library.svg" alt="html">
+                        <img class="skills__item-img" src="img/library.svg" alt="html">
                         <p class="skills__item-title title">Работа с библиотеками и фреймворками</p>
                         <p class="skills__item-subtitle">фронтенд разработчики должны быть знакомы с различными
                             библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать
@@ -103,7 +148,7 @@
                             очень важным навыком.</p>
                     </li>
                     <li class="skills__item">
-                        <img src="img/react.svg" alt="html">
+                        <img class="skills__item-img" src="img/react.svg" alt="html">
                         <p class="skills__item-title">Разработка для мобильных устройств и адаптивная верстка</p>
                         <p class="skills__item-subtitle">фронтенд разработчики должны быть знакомы с различными
                             библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать
@@ -113,7 +158,98 @@
                 </ul>
             </div>
         </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h3 class="services__title">Помогаю реализовать широкий спектр задач</h3>
+                <ul class="services__items">
+                    <li class="services__item">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="img/services-mobile-1.svg">
+                            <img class="services__item-img" src="img/services-1.jpg" alt="services">
+                        </picture>
+
+                        <div class="services__item-wrapper">
+                            <h2 class="services__item-title">Разработка сайта под ключ</h2>
+                            <p class="services__item-subtitle">
+                                Это создание дизайн веб-сайтов, созданный для удобства
+                                пользователя и решения бизнес-задач<br>
+                                Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь
+                                совершит целевое действие
+                            </p>
+                        </div>
+                    </li>
+                    <li class="services__item">
+                        <picture>
+                            <source media="(max-width: 500px )" srcset="img/services-mobile-2.svg">
+                            <img class="services__item-img" src="img/services-2.jpg" alt="services">
+                        </picture>
+
+                        <div class="services__item-wrapper">
+                            <h2 class="services__item-title">Верстка сайтов</h2>
+                            <p class="services__item-subtitle">
+                                Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд
+                                разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта
+                            </p>
+                        </div>
+                    </li>
+                    <li class="services__item">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="img/services-mobile-3.svg    ">
+                            <img class="services__item-img" src="img/services-3.jpg" alt="services">
+                        </picture>
+
+                        <div class="services__item-wrapper">
+                            <h2 class="services__item-title">Разработка мобильного интерфейса</h2>
+                            <p class="services__item-subtitle">
+                                Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд
+                                разработчик может помочь создать динамический и удобный пользовательский интерфейс для
+                                вашего сайта или приложения.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact__inner">
+                    <h3 class="contact__title">
+                        Для связи со мной заполните простую форму
+                    </h3>
+                    <input class="contact__name" type="text" placeholder="Имя Фамилия">
+                    <input class="contact__mail" type="text" placeholder="example@mail.com">
+                    <button class="contact__btn">Отправить</button>
+
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <p class="footer__top-title">Портфолио фротнтенд-разработчика Алексеева Алексея</p>
+                    <ul class="footer__top-nav">
+                        <li class="footer__top-item">
+                            <a class="footer__item-link" target="_blank" href="mailto:a.l.e.xseev@bk.ru">mail</a>
+                            <a class="footer__item-link" href="http://t.me/a_lexseev">telegram</a>
+                            <a class="footer__item-link" href="http://vk.com/a_lexseev">VK</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__down">
+                    <p class="footer__down-protection">Все права защищены. 2023</p>
+                    <p class="footer__down-politic">политика обработки данных</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="burger.js"></script>
+    <script src="top.js"></script>
 </body>
 
 </html>

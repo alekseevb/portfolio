@@ -1,6 +1,14 @@
 @import './blocks/header';
 @import './blocks/project';
 @import './blocks/skills';
+@import './blocks/services';
+@import './blocks/contact';
+@import './blocks/footer';
+@import './blocks/burger';
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "IBM Plex Mono", "Manrope", sans-serif;
@@ -8,11 +16,22 @@ body {
     background-color: black;
 }
 
+li {
+    list-style: none;
+}
+
+.body_fixed {
+    overflow-y: hidden;
+}
+
 .container {
     max-width: 1150px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
-li {
-    list-style: none;
+@media (max-width: 960px) {
+    .container {
+        padding: 0 15px;
+    }
 }
